@@ -1,7 +1,5 @@
 $:.unshift File.expand_path('../lib', __dir__)
 
-require 'patron'
-
 module Zenvia
   def self.config
     Config.instance
