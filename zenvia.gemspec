@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'zenvia/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Zenvia"
+  spec.name          = "zenvia"
   spec.version       = Zenvia::VERSION
   spec.authors       = ["Parafuzo Core Team"]
   spec.email         = ["dev@parafuzo.com"]
