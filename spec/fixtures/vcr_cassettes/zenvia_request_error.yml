@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.zenvia360.com.br/GatewayIntegration/msgSms.do
+    body:
+      encoding: ASCII-8BIT
+      string: account=parafuzo&code=58FfZ912P9&dispatch=send&to=5511971889422&msg=&id=42
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      X-Powered-By:
+      - 'Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0'
+      Set-Cookie:
+      - JSESSIONID=834435163BCA2AC65D1CBB032A1A9790.node42; Path=/
+      Content-Type:
+      - text/plain;charset=ISO-8859-1
+      Content-Length:
+      - '27'
+      Date:
+      - Mon, 10 Nov 2014 18:56:38 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: 010 - Empty message content
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 03:50:47 GMT
+recorded_with: VCR 2.8.0
