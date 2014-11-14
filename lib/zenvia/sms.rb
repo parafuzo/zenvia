@@ -18,11 +18,11 @@ module Zenvia
 
     def post_params
       {
-        to:             to,
-        message:        message,
-        dispatch:       dispatch,
-        id:             message_id,
-        callbackOption: callback_option
+        to:              to,
+        message:         message,
+        dispatch:        dispatch,
+        id:              message_id,
+        callback_option: callback_option
       }.delete_if { |k,v| v.nil? }
     end
 

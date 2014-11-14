@@ -28,12 +28,13 @@ module Zenvia
 
     def parse_params
       {
-        account:  Zenvia.config.account,
-        code:     Zenvia.config.code,
-        dispatch: params[:dispatch],
-        to:       params[:to],
-        msg:      params[:message],
-        id:       params[:id]
+        account:        Zenvia.config.account,
+        code:           Zenvia.config.code,
+        dispatch:       params[:dispatch],
+        to:             params[:to],
+        msg:            params[:message],
+        id:             params[:id],
+        callbackOption: params[:callback_option]
       }
     end
 

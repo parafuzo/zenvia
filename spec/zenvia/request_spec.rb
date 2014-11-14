@@ -6,7 +6,8 @@ describe Zenvia::Request do
       to:        '5511971889422',
       message:   "Message sent by parafuzo.com",
       dispatch:  :send,
-      id:        "42"
+      id:        "42",
+      callback_option: 2
     } }
 
     def do_post
