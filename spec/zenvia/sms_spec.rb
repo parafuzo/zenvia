@@ -28,5 +28,16 @@ describe Zenvia::Sms do
         subject.send
       end
     end
+
+    context "when there is the callbackOption" do
+      it "should send callbackOption" do
+        request_mock.should_receive(:post).with({
+          to: :number, message: :message, dispatch: :send, callbackOption: 2
+        })
+
+        subject.callback_option = 2
+        subject.send
+      end
+    end
   end
 end

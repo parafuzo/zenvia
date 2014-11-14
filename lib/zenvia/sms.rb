@@ -1,6 +1,6 @@
 module Zenvia
   class Sms
-    attr_accessor :to, :message, :dispatch, :message_id
+    attr_accessor :to, :message, :dispatch, :message_id, :callback_option
 
     def initialize(to, message)
       @to, @message = to, message
@@ -18,10 +18,11 @@ module Zenvia
 
     def post_params
       {
-        to:        to,
-        message:   message,
-        dispatch:  dispatch,
-        id:        message_id
+        to:             to,
+        message:        message,
+        dispatch:       dispatch,
+        id:             message_id,
+        callbackOption: callback_option
       }.delete_if { |k,v| v.nil? }
     end
 
