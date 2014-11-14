@@ -1,4 +1,5 @@
 # Zenvia
+[![Gem Version](https://badge.fury.io/rb/zenvia.svg)](http://badge.fury.io/rb/zenvia)
 
 TODO: Write a gem description
 
