@@ -6,8 +6,9 @@ module Zenvia
     attr_reader :params, :response
 
     def initialize
-      session.base_url = BASE_URL
-      session.timeout  = Zenvia.config.timeout
+      session.base_url        = BASE_URL
+      session.timeout         = Zenvia.config.timeout
+      session.connect_timeout = Zenvia.config.connect_timeout
     end
 
     def post(params)
