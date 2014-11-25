@@ -3,7 +3,7 @@ module Zenvia
     associate_values(
       :queued                 => 100,
       :sent_to_operator       => 110,
-      :reception_unavailable  => 101,
+      :reception_unavailable  => 111,
       :received_by_mobile     => 120,
       :number_not_covered     => 140,
       :number_inactive        => 145,
