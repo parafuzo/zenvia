@@ -1,0 +1,19 @@
+en:
+  enumerations:
+    'zenvia/sms_status':
+      queued: Message queued
+      sent_to_operator: Message sent to operator
+      reception_unavailable: Message reception unavailable
+      received_by_mobile: Message received by mobile
+      number_not_covered: Mobile number not covered
+      number_inactive: Mobile number inactive
+      expired_in_operator: Message expired in operator
+      operator_network_error: Operator network error
+      rejected_by_operator: Message rejected by operator
+      cancelled_by_operator: Message cancelled or blocked by operator
+      bad_message: Bad message
+      bad_number: Bad number
+      blocked: Message blocked
+      predictive_cleansing: Message blocked by predictive cleansing
+      international_sending: International sending not allowed
+      unknown_error: unknown error

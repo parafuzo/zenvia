@@ -1,8 +1,9 @@
 ENV["RACK_ENV"] = 'test'
 
 require_relative '../lib/zenvia'
-
 require 'vcr'
+
+I18n.default_locale = I18n.locale = :en
 
 VCR.configure do |c|
   c.cassette_library_dir = File.join(__dir__, "fixtures/vcr_cassettes")
