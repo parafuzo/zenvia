@@ -23,5 +23,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "patron"       , "~> 0.4.18"
   spec.add_runtime_dependency "enumerate_it" , "~> 1.2.3"
-  spec.add_runtime_dependency "i18n"         , "~> 0.6.11"
+  spec.add_runtime_dependency "i18n"         , "~> 0.7"
+  spec.add_runtime_dependency "activesupport", "~> 4.1.9"
 end
