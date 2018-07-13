@@ -1,6 +1,6 @@
 module Zenvia
   class Request
-    BASE_URL  = "http://www.zenvia360.com.br"
+    BASE_URL  = "https://api-http.zenvia.com"
     POST_PATH = "/GatewayIntegration/msgSms.do"
 
     attr_reader :params, :response
